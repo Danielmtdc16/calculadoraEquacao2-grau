@@ -23,8 +23,8 @@
 
     else if (delta == 0){
 
-        let x1 = (-(b) + Math.sqrt(delta)) / 2 * a;
-        let x2 = (-(b) - Math.sqrt(delta)) / 2 * a;
+        let x1 = (-(b) + Math.sqrt(delta)) / (2 * a);
+        let x2 = (-(b) - Math.sqrt(delta)) / (2 * a);
 
         informacaoDaEq.innerHTML = "Delta = 0 --> x1 = x2";
         r1.innerHTML = "X1 = " + x1.toFixed(4);
@@ -34,8 +34,8 @@
 
     else if (delta > 0){
 
-        let x1 = (-(b) + Math.sqrt(delta)) / 2 * a;
-        let x2 = (-(b) - Math.sqrt(delta)) / 2 * a;
+        let x1 = (-(b) + Math.sqrt(delta)) / (2 * a);
+        let x2 = (-(b) - Math.sqrt(delta)) / (2 * a);
 
         informacaoDaEq.innerHTML = "Delta > 0 --> x1 diferente de x2";
         r1.innerHTML = "X1 = " + x1.toFixed(4);
