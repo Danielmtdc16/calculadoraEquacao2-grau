@@ -7,7 +7,7 @@
 
     // é essencial que o valor de a seja maior ou menor que zero, porém não seja = 0. Portanto:
 
-    if (parseFloat(a) == 0){
+    if (a == "" || parseFloat(a) == 0){
         alert("O valor de a = 0, não é uma equação do 2º grau!");
     } else {
 
