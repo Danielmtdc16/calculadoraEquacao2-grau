@@ -5,6 +5,12 @@
     let b = document.getElementById("b").value;
     let c = document.getElementById("c").value;
 
+    // é essencial que o valor de a seja maior ou menor que zero, porém não seja = 0. Portanto:
+
+    if (a == 0){
+        alert("O valor de a = 0, não é uma equação do 2º grau!");
+    }
+
     // calcular primeiramente o delta da equação
 
     let r1 = document.getElementById("r1");
