@@ -8,7 +8,7 @@
     // é essencial que o valor de a seja maior ou menor que zero, porém não seja = 0. Portanto:
 
     if (a == "" || parseFloat(a) == 0){
-        alert("O valor de a = 0, não é uma equação do 2º grau!");
+        alert("O valor de a = 0 ou está vazio, logo, não é uma equação do 2º grau!");
     } else {
 
         // calcular primeiramente o delta da equação
