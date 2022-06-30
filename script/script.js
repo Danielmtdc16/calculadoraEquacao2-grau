@@ -9,43 +9,45 @@
 
     if (parseFloat(a) == 0){
         alert("O valor de a = 0, não é uma equação do 2º grau!");
-    }
+    } else {
 
-    // calcular primeiramente o delta da equação
+        // calcular primeiramente o delta da equação
 
-    let r1 = document.getElementById("r1");
-    letr2 = document.getElementById("r2");
-    let informacaoDaEq = document.getElementById("informacaoDaEq");
+        let r1 = document.getElementById("r1");
+        let r2 = document.getElementById("r2");
+        let informacaoDaEq = document.getElementById("informacaoDaEq");
 
-    r1.innerHTML = "";
-    r2.innerHTML = "";
-    informacaoDaEq.innerHTML = "";
+        r1.innerHTML = "";
+        r2.innerHTML = "";
+        informacaoDaEq.innerHTML = "";
 
-    let delta = Math.pow(parseFloat(b), 2) - 4 * parseFloat(a) * parseFloat(c);
+        let delta = Math.pow(parseFloat(b), 2) - 4 * parseFloat(a) * parseFloat(c);
 
-    if (delta < 0){
-        alert("Esta equação não tem soluções reais! Delta menor que 0");
-    }
+        if (delta < 0){
+            alert("Esta equação não tem soluções reais! Delta menor que 0");
+        }
 
-    else if (delta == 0){
+        else if (delta == 0){
 
-        let x1 = (-(b) + Math.sqrt(delta)) / (2 * a);
-        let x2 = (-(b) - Math.sqrt(delta)) / (2 * a);
+            let x1 = (-(b) + Math.sqrt(delta)) / (2 * a);
+            let x2 = (-(b) - Math.sqrt(delta)) / (2 * a);
 
-        informacaoDaEq.innerHTML = "Delta = 0 --> x1 = x2";
-        r1.innerHTML = "X1 = " + x1.toFixed(4);
-        r2.innerHTML = "X2 = " + x2.toFixed(4);
+            informacaoDaEq.innerHTML = "Delta = 0 --> x1 = x2";
+            r1.innerHTML = "X1 = " + x1.toFixed(4);
+            r2.innerHTML = "X2 = " + x2.toFixed(4);
 
-    }
+        }
 
-    else if (delta > 0){
+        else if (delta > 0){
 
-        let x1 = (-(b) + Math.sqrt(delta)) / (2 * a);
-        let x2 = (-(b) - Math.sqrt(delta)) / (2 * a);
+            let x1 = (-(b) + Math.sqrt(delta)) / (2 * a);
+            let x2 = (-(b) - Math.sqrt(delta)) / (2 * a);
 
-        informacaoDaEq.innerHTML = "Delta > 0 --> x1 diferente de x2";
-        r1.innerHTML = "X1 = " + x1.toFixed(4);
-        r2.innerHTML = "X2 = " + x2.toFixed(4);
+            informacaoDaEq.innerHTML = "Delta > 0 --> x1 diferente de x2";
+            r1.innerHTML = "X1 = " + x1.toFixed(4);
+            r2.innerHTML = "X2 = " + x2.toFixed(4);
+
+        }
 
     }
  }
