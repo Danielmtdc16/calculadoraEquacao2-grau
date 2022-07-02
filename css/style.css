@@ -84,3 +84,8 @@ button{
     }
 }
 
+@media screen and (max-width: 467px){
+    .conteudo{
+        width: 80vw;
+    }
+}
