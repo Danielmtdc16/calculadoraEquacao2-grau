@@ -88,4 +88,8 @@ button{
     .conteudo{
         width: 80vw;
     }
+
+    #criador{
+        margin-top: 220px;
+    }
 }
