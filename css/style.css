@@ -61,3 +61,53 @@ button{
     font-weight: 700;
     margin-top: 70px;
 }
+
+@media screen and (max-width: 360px){
+    #titulo{
+        font-size: 20px;
+    }
+
+    .descricao{
+        font-size:12px;
+    }
+    .conteudo{
+        width: 79vw;
+    }
+
+    input{
+        height: 30px;
+        width: 40px;
+    }
+
+    #criador{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .conteudo{
+        width: 59vw;
+    }
+
+    input{
+        margin-top: 150px;
+        height: 40px;
+        width: 60px;
+    }
+
+    label{
+        font-weight: 800;
+    }
+
+    .descricao{
+        margin-top: 150px;
+    }
+
+    button{
+        margin-top: 100px;
+    }
+
+    .resultado{
+        margin-top: 150px;
+    }
+}
